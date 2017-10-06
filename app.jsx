@@ -48,14 +48,14 @@ class Teachers extends React.Component {
 					<div className ="col-lg-6 col-xs-12 text-center">
 						<img src="./img/img1.png" alt="" width="80%;"/>
 						<div className="text-left">
-							<h2>Angie McAngular</h2>
+							<h3>Angie McAngular</h3>
 							<p>Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!</p>
 						</div>
 					</div>
 					<div className ="col-lg-6 col-xs-12 text-center">
 						<img src="./img/img2.png" alt="" width="80%;"/>
 						<div className="text-left">
-							<h2>NodeStradamus</h2>
+							<h3>NodeStradamus</h3>
 							<p>'NodeStra' is a software engineer and philosopher trying to leave the world better than he found it. He codes for non-profits, eCommerce, and large-scale web apps.</p>
 						</div>
 					</div>
@@ -64,14 +64,14 @@ class Teachers extends React.Component {
 					<div className ="col-lg-6 col-xs-12 text-center">
 						<img src="./img/img3.png" alt="" width="80%;"/>
 						<div className="text-left">
-							<h2>Geo 'Lo' Cation</h2>
+							<h3>Geo 'Lo' Cation</h3>
 							<p>Geo is a JavaScript developer working on large-scale applications. He's also a teacher who strives to support students in removing all barriers to learning code.</p>
 						</div>
 					</div>
 					<div className ="col-lg-6 col-xs-12 text-center">
 						<img src="./img/img4.png" alt="" width="80%;"/>
 						<div className="text-left">
-							<h2>Ecma Scriptnstuff</h2>
+							<h3>Ecma Scriptnstuff</h3>
 							<p>Ecma found her passion for computers and programming over 15 years ago. She is excited to introduce people to the wonderful world of JavaScript.</p>
 						</div>
 					</div>
@@ -80,14 +80,14 @@ class Teachers extends React.Component {
 					<div className ="col-lg-6 col-xs-12 text-center">
 						<img src="./img/img5.png" alt="" width="80%;"/>
 						<div className="text-left">
-							<h2>Jay Query</h2>
+							<h3>Jay Query</h3>
 							<p>Jay is a developer, author of CSS: The Missing Manual, JavaScript & jQuery: The Missing Manual, and web development teacher.</p>
 						</div>
 					</div>
 					<div className ="col-lg-6 col-xs-12 text-center">
 						<img src="./img/img6.png" alt="" width="80%;"/>
 						<div className="text-left">
-							<h2>Json Babel</h2>
+							<h3>Json Babel</h3>
 							<p>All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using the right tools for the job.</p>
 						</div>
 					</div>
@@ -129,12 +129,15 @@ class Courses extends React.Component {
 					title:'Bootstrap 4 Basics',
 					text:'Learn to use Bootstrap 4, one of the most popular open source front end frameworks, to help you build a functional design and layout in little time.'
 				}].map( (item, index) => {
-					return <dt key = {index}>
-					<img src={item.img} alt="" width="10%"/>
-					<h3>{item.title}</h3>
-					<p>{item.text}</p>
-				</dt>
-
+					return <dt key = {index} className="row">
+							<div className="col-lg-3">
+								<img src={item.img} alt="" width="60%"/>
+							</div>
+							<div className="col-lg-9">
+								<h3>{item.title}</h3>
+								<p>{item.text}</p>
+							</div>
+				 		</dt>
 			});
 			break;
 			case 'javascript':
@@ -163,11 +166,15 @@ class Courses extends React.Component {
 					title:'Node.js Basics',
 					text:'In this course we will create a command line application to retrieve users profile information from the Treehouse website. Well be writing our application in JavaScript to run on the Node.js platform.'
 				}].map( (item, index) => {
-					return <dt key = {index}>
-					<img src={item.img} alt="" width="10%"/>
-					<h3>{item.title}</h3>
-					<p>{item.text}</p>
-				</dt>
+					return <dt key = {index} className="row">
+							<div className="col-lg-3">
+								<img src={item.img} alt="" width="60%"/>
+							</div>
+							<div className="col-lg-9">
+								<h3>{item.title}</h3>
+								<p>{item.text}</p>
+							</div>
+						 </dt>
 
 			});
 			break;
@@ -197,10 +204,14 @@ class Courses extends React.Component {
 					title:'Introduction to HTML and CSS',
 					text:'Get started creating web pages with HTML and CSS, the basic building blocks of web development. HTML, or Hypertext Markup Language, is a standard set of tags you will use to tell the web browser how the content of your web pages and applications are structured. Use CSS, or Cascading Style Sheets, to select HTML tags and tell the browser what your content should look like.'
 				}].map( (item, index) => {
-					return <dt key = {index}>
-							<img src={item.img} alt="" width="10%"/>
-							<h3>{item.title}</h3>
-							<p>{item.text}</p>
+					return <dt key = {index} className="row">
+							<div className="col-lg-3">
+								<img src={item.img} alt="" width="60%"/>
+							</div>
+							<div className="col-lg-9">
+								<h3>{item.title}</h3>
+								<p>{item.text}</p>
+							</div>
 						 </dt>
 				});
 			break;
@@ -209,10 +220,10 @@ class Courses extends React.Component {
 			<div className="main-content courses">
 				<div className="course-header group">
 					<h2>Courses</h2>
-					<ul className="Coursesse-nav">
-						<li><a href='#/courses/html'>HTML</a></li>
-						<li><a href='#/courses/css'>CSS</a></li>
-						<li><a href='#/courses/javascript'>JavaScript</a></li>
+					<ul className="Coursesse-nav row text-right">
+						<dt className="col-lg-4"><a href='#/courses/html'>HTML</a></dt>
+						<dt className="col-lg-4"><a href='#/courses/css'>CSS</a></dt>
+						<dt className="col-lg-4"><a href='#/courses/javascript'>JavaScript</a></dt>
 					</ul>
 
 					<ul>
@@ -275,8 +286,9 @@ class App extends React.Component {
          <div>
             <header>
 			<div className="row">
-				<div className="col-xs-12 col-lg-3">
-					<h4>App</h4>
+				<div className="col-xs-12 col-lg-3 icon text-center">
+						<span className="glyphicon">&#xe079;</span>
+						<span className="glyphicon">&#xe080;</span>
 				</div>
 				<div className="col-xs-12 col-lg-9 text-right">
 					<menu>
