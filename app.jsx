@@ -133,7 +133,7 @@ class Courses extends React.Component {
 				}].map( (item, index) => {
 					return <dt key = {index} className="row">
 							<div className="col-lg-3">
-								<img src={item.img} alt="" width="60%"/>
+								<img className="img" src={item.img} alt="" width="60%"/>
 							</div>
 							<div className="col-lg-9">
 								<h3>{item.title}</h3>
@@ -170,7 +170,7 @@ class Courses extends React.Component {
 				}].map( (item, index) => {
 					return <dt key = {index} className="row">
 							<div className="col-lg-3">
-								<img src={item.img} alt="" width="60%"/>
+								<img className="img" src={item.img} alt="" width="60%"/>
 							</div>
 							<div className="col-lg-9">
 								<h3>{item.title}</h3>
@@ -208,7 +208,7 @@ class Courses extends React.Component {
 				}].map( (item, index) => {
 					return <dt key = {index} className="row">
 							<div className="col-lg-3">
-								<img src={item.img} alt="" width="60%"/>
+								<img className="img" src={item.img} alt="" width="60%"/>
 							</div>
 							<div className="col-lg-9">
 								<h3>{item.title}</h3>

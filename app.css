@@ -116,7 +116,7 @@ h2,h3{
 }
 
 @media screen and (max-width: 1000px) and (min-width: 520px) {
-  img{
+  .img{
     width: 20%;
   }
 }
