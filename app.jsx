@@ -293,18 +293,18 @@ class App extends React.Component {
 						<span className="glyphicon">&#xe080;</span>
 				</div>
 				<div className="col-xs-12 col-lg-9 text-right">
-					<menu>
+					<menu className="row">
 					<ul>
-						<li>
+						<li className="col-xs-12 col-lg-3 text-center">
 							<a href="#/home">Home</a>
 						</li>{' '}
-						<li>
+						<li className="col-xs-12 col-lg-3 text-center">
 							<a href="#/about">About</a>
 						</li>{' '}
-						<li>
+						<li className="col-xs-12 col-lg-3 text-center">
 							<a href="#/teachers">Teachers</a>
 						</li>{' '}
-						<li>
+						<li className="col-xs-12 col-lg-3 text-center">
 							<a href="#/courses">Courses</a>
 						</li>
 					</ul>{' '}
