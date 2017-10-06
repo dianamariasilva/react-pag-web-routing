@@ -15,21 +15,22 @@ menu ul{
   margin: 0;
   padding: 0; 
   background-color: #BCCDC2;
+  height: 100%;
 }
-menu li {
+menu li, li {
   display: inline-block;
-  padding: 5px;
+  padding: 0px;
+  margin: 25px 0px 25px 0px;
+  height: 100%;
 }
-a:link, a:active, a:hover {
-  color: #B4AAAA;
+
+a:link, a:active, a:hover{
+  color: white;
   font-weight: bold;
   text-decoration: none;
-  background-color: #000000;
-  border-radius: 27px 27px 27px 27px;
-  -moz-border-radius: 27px 27px 27px 27px;
-  -webkit-border-radius: 27px 27px 27px 27px;
   border: 0px solid #000000;
   width: 100%;
+  height: 100%;
 }
 
 img{
@@ -41,24 +42,24 @@ img{
 
 header {
   padding-top: 10px;
-  color: #121A35;
+  color: white;
   font-size: 20px;
   font-weight: bold;
-  background-color: #BCCDC2;
+  background-color: rgb(94, 88, 80);
   border-radius: 15px 15px 0px 0px;
-  -moz-border-radius: 15px 15px 0px 0px;
-  -webkit-border-radius: 15px 15px 0px 0px;
-  border: 0px solid #000000;
-  background-color: #5E5850;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
   height: 100%;
 }
 
 menu {
-  background-color: #ccc;
+  background-color: rgba(188, 205, 194, 0);
   padding: 0px;
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin: 5px;
   font-family: 'Baumans', cursive;
+  width: 100%;
 }
 
 /* .main-content{
@@ -66,25 +67,26 @@ menu {
 } */
 
 #root{
-  margin: 15px 250px 15px 250px;
+  margin: 5% 10% 5% 10%;
   border-radius: 19px 19px 19px 19px;
   -moz-border-radius: 19px 19px 19px 19px;
   -webkit-border-radius: 19px 19px 19px 19px;
   background-color: white;
 } 
 
-a{
+dt a{
+  width: 100%;
   color: #000000;
-  padding-left:1em;
-  padding-right:1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   cursor:pointer;
   border-color:rgba(0,0,0,.1);
   text-decoration:none;
   font-weight:0.1em;
   font-family: 'Baumans', cursive;
-  background-color: #BCCDC2;
+  background-color: rgba(188, 205, 194, 0.38);
 }
 
 .main-content{
@@ -103,10 +105,11 @@ h2,h3{
   color: #121A35;
   font-weight:1.6em;
   margin-bottom:1.25em;
-  text-shadow: -2px -2px 2px #aaa;
+  text-shadow: -2px -2px 2px rgba(170, 170, 170, 0.26);
   font-family: 'Ribeye Marrow', cursive;
 }
 
 .icon{
   color: white;
+  margin-bottom: 10px;
 }
