@@ -1,0 +1,50 @@
+*{
+  outline: 1px red solid;
+}
+
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+}
+
+menu ul{
+  margin: 0;
+  padding: 0; }
+menu li {
+  display: inline-block;
+  padding: 5px;
+}
+a.active {
+  color: #444;
+  font-weight: bold;
+  text-decoration: none;
+}
+header {
+  padding: 10px;
+  color: #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #444;
+  border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  border: 0px solid #000000;
+}
+menu {
+  background-color: #ccc;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* .main-content{
+
+} */
+
+#root{
+  margin: 15px 15px 15px 15px;
+  border-radius: 19px 19px 19px 19px;
+  -moz-border-radius: 19px 19px 19px 19px;
+  -webkit-border-radius: 19px 19px 19px 19px;
+  border: 1px solid #000000;
+}
