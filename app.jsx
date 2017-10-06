@@ -273,23 +273,31 @@ class App extends React.Component {
 		}
 		return (
          <div>
-            <header>App</header>{' '}
-            <menu>
-               <ul>
-                  <li>
-                     <a href="#/home">Home</a>
-                  </li>{' '}
-                  <li>
-                     <a href="#/about">About</a>
-                  </li>{' '}
-                  <li>
-                     <a href="#/teachers">Teachers</a>
-                  </li>{' '}
-                  <li>
-                     <a href="#/courses">Courses</a>
-                  </li>
-               </ul>{' '}
-            </menu>
+            <header>
+			<div className="row">
+				<div className="col-xs-12 col-lg-3">
+					<h2>App</h2>
+				</div>
+				<div className="col-xs-12 col-lg-9 text-right">
+					<menu>
+					<ul>
+						<li>
+							<a href="#/home">Home</a>
+						</li>{' '}
+						<li>
+							<a href="#/about">About</a>
+						</li>{' '}
+						<li>
+							<a href="#/teachers">Teachers</a>
+						</li>{' '}
+						<li>
+							<a href="#/courses">Courses</a>
+						</li>
+					</ul>{' '}
+					</menu>
+				</div>
+			</div>
+			</header>
 				{
 					propsForCourses?
 						<Child route = {propsForCourses} />

@@ -2,6 +2,8 @@
   outline: 1px red solid;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
 body {
   margin: 0;
   font: 16px/1 sans-serif;
