@@ -276,7 +276,7 @@ class App extends React.Component {
             <header>
 			<div className="row">
 				<div className="col-xs-12 col-lg-3">
-					<h2>App</h2>
+					<h4>App</h4>
 				</div>
 				<div className="col-xs-12 col-lg-9 text-right">
 					<menu>
