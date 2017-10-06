@@ -1,3 +1,5 @@
+"use strict";
+
 class Start extends React.Component {
 	render() {
 		return (
