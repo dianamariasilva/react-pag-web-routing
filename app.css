@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font: 16px/1 sans-serif;
+  background-color: #5AC683;
 }
 
 menu ul{
@@ -42,7 +43,7 @@ menu {
 } */
 
 #root{
-  margin: 15px 15px 15px 15px;
+  margin: 15px 250px 15px 250px;
   border-radius: 19px 19px 19px 19px;
   -moz-border-radius: 19px 19px 19px 19px;
   -webkit-border-radius: 19px 19px 19px 19px;
